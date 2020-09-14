@@ -1,0 +1,184 @@
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.flash {
+  -moz-animation: flash 1s ease-out;
+  -moz-animation-iteration-count: 1;
+
+  -webkit-animation: flash 1s ease-out;
+  -webkit-animation-iteration-count: 1;
+
+  -ms-animation: flash 1s ease-out;
+  -ms-animation-iteration-count: 1;
+}
+
+@keyframes flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fbf8b2;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fbf8b2;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-moz-keyframes flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fbf8b2;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@-ms-keyframes flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fbf8b2;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes moveDownwards {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.play__method {
+  background-color: azure;
+  height: 25rem;
+  width: 30rem;
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  top: 2rem;
+  margin-bottom: 1rem;
+  top: 5rem;
+  position: relative;
+  animation: moveDownwards 2s;
+}
+.play__method-heading {
+  font-size: 2rem;
+  color: rgba(24, 23, 23, 0.637);
+}
+.play__method-body {
+  color: rgba(85, 85, 85, 0.637);
+  line-height: 2rem;
+}
+.button__start {
+  color: azure;
+  top: 10rem;
+  right: 1rem;
+  outline: none;
+  border-style: none;
+  float: right;
+  font-size: 1rem;
+  position: absolute;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  background-image: linear-gradient(140deg, #445533, #ff34ff);
+  border-radius: 200px;
+  transition: all 0.6s ease-out;
+  cursor: pointer;
+}
+.btn-transit {
+  display: none;
+}
+
+.btn-trans {
+  right: 9rem;
+  animation: moveLeft 2s;
+}
