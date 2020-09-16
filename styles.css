@@ -124,6 +124,7 @@ body {
   }
 }
 
+
 @keyframes moveLeft {
   0% {
     opacity: 0;
@@ -137,6 +138,7 @@ body {
     transform: translate(0);
   }
 }
+
 
 .play__method {
   background-color: azure;

@@ -87,6 +87,7 @@ let x = document.querySelector(".btn-transit");
 document.querySelector("button").addEventListener("click", function () {
   if (x.style.display !== "none") {
     document.querySelector("#class-change").style.display = "none";
+    document.querySelector("#class-change").classList.add("animateUp");
     this.classList.remove("btn-trans");
     x.classList.remove("play__method");
   } else {
